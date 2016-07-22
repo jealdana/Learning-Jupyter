@@ -185,7 +185,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This notebook has the purpose to introduce concepts of Markdown and LaTex in order to create a Jupyter notebook. 
+<p>This notebook has the purpose to introduce concepts of Markdown and LaTex in order to create a Jupyter(iPython) notebook. 
 <a id='index'></a></p>
 <h2 id="Index">Index<a class="anchor-link" href="#Index">&#182;</a></h2><ol>
 <li><a href="#installation">Installation Process</a></li>
@@ -203,6 +203,7 @@ div#notebook {
 </ol>
 </li>
 <li><a href="#tables">Tables</a></li>
+<li><a href="#htmlCode">HTML code</a></li>
 <li><a href="#FRLink">Further reading</a></li>
 </ol>
 
@@ -286,9 +287,18 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><code>**Bold**</code></li>
-<li><code>*Italic font*</code></li>
-<li><code>~~Text~~</code></li>
+<li>For <strong>Bold</strong><br>
+This is the code:
+<pre><code>**Bold**</code></pre>
+</li>
+<li>For <em>Italic</em><br>
+This is the code:
+<pre><code>*Italic font*</code></pre>
+</li>
+<li>For <del>Scratched text</del><br>
+This is the code:
+<pre><code>~~Text~~</code></pre>
+</li>
 </ul>
 <h6 id="Go-to-Index"><a href="#index">Go to Index</a><a class="anchor-link" href="#Go-to-Index">&#182;</a></h6>
 </div>
@@ -424,12 +434,19 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='videosLink'></a></p>
-<h2 id="Video-Link">Video Link<a class="anchor-link" href="#Video-Link">&#182;</a></h2><p>In the same way of an image you can create a link to a video. In this example is linked to a youtube course video of nanoHUB.</p>
+<h2 id="Video-Link">Video Link<a class="anchor-link" href="#Video-Link">&#182;</a></h2><p><strong>Markdown form</strong></p>
+<p>In the same way of an <strong><u>image</u></strong> you can create a link to a video. In this example is linked to a youtube course video of nanoHUB.</p>
 <p><a href="https://www.youtube.com/watch?v=aQaRXdabug0" title="NanoHUB Is AWESOME"><img src="https://i.ytimg.com/vi/aQaRXdabug0/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=tZcrGm6OdaCxO6_3-31E4kafygM" alt="Image"></a></p>
 <p>The code for this example is:</p>
 
 <pre><code>
 [![Image](https://i.ytimg.com/vi/aQaRXdabug0/hqdefault.jpg?custom=true&amp;w=196&amp;h=110&amp;stc=true&amp;jpg444=true&amp;jpgq=90&amp;sp=68&amp;sigh=tZcrGm6OdaCxO6_3-31E4kafygM)](https://www.youtube.com/watch?v=aQaRXdabug0 "NanoHUB Is AWESOME")</code></pre>
+<p><strong>HTML form</strong></p>
+<p>In this form, the video is embeded in the document. Note: It may occur that in the Jupyter editor mode the video appears like in white but it's there. One way to verify that it is there is when you download your file in a html document. I should appear and the link should work properly.</p>
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/KWa7_YwQImc?list=PLtkeUZItwHK5wJleEvJ9aqAtLtSPQAOPK" frameborder="0" allowfullscreen></iframe></p>
+<p>The code for this example is:</p>
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;640&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;360&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://www.youtube.com/embed/KWa7_YwQImc?list=PLtkeUZItwHK5wJleEvJ9aqAtLtSPQAOPK&quot;</span> <span class="na">frameborder</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="na">allowfullscreen</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+</pre></div>
 <h6 id="Go-to-Index"><a href="#index">Go to Index</a><a class="anchor-link" href="#Go-to-Index">&#182;</a></h6>
 </div>
 </div>
@@ -675,6 +692,53 @@ Source: <a href="https://wch.github.io/latexsheet/">Latex</a></p>
 </tr>
 </tbody>
 </table>
+<h6 id="Go-to-Index"><a href="#index">Go to Index</a><a class="anchor-link" href="#Go-to-Index">&#182;</a></h6><hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='htmlCode'></a></p>
+<h2 id="HTML-code">HTML code<a class="anchor-link" href="#HTML-code">&#182;</a></h2><p>In this section I grouped all the HTML sintax used in this tutorial so you don't need to go from one section to another to look HTML piece codes.</p>
+<ol>
+<li>Indexing</li>
+<li>Font styles</li>
+<li>Youtube videos  </li>
+</ol>
+<hr>
+<h4 id="Indexing"><strong>Indexing</strong><a class="anchor-link" href="#Indexing">&#182;</a></h4><p>This process is divided in two parts:</p>
+<ol>
+<li>Point the reference</li>
+<li>State the reference</li>
+</ol>
+<p>1.The next code is to refer to a specific part of the page.</p>
+
+<pre><code>[Text that will point the link](#referenceID)</code></pre>
+<p>i.e. <a href="#referenceID">link</a></p>
+<p>2.The webpage will jump to this id position.</p>
+
+<pre><code>&lt;a id='referenceID'&gt;&lt;/a&gt; REMEMBER TO CLOSE THE COMMAND!
+
+Note that the refered code will not appear for the user</code></pre>
+<p><a id='referenceID'></a></p>
+<h4 id="Font-styles"><strong>Font styles</strong><a class="anchor-link" href="#Font-styles">&#182;</a></h4><ul>
+<li><p><u>Underline </u></p>
+
+<pre><code>&lt;u&gt; Text &lt;/u&gt;</code></pre>
+</li>
+<li><p><p style="color:green;">Change the color of the font</p></p>
+
+<pre><code>&lt;p style="color:green;"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+<p><a href="http://www.w3schools.com/html/html_styles.asp">More examples</a></p>
+</li>
+</ul>
+<h4 id="Youtube-videos"><strong>Youtube videos</strong><a class="anchor-link" href="#Youtube-videos">&#182;</a></h4><p>This is the html code:</p>
+
+<pre><code>&lt;iframe width="640" height="360" src="https://www.youtube.com/embed/KWa7_YwQImc?list=PLtkeUZItwHK5wJleEvJ9aqAtLtSPQAOPK" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
 <h6 id="Go-to-Index"><a href="#index">Go to Index</a><a class="anchor-link" href="#Go-to-Index">&#182;</a></h6><hr>
 
 </div>
